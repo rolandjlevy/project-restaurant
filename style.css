@@ -1,0 +1,101 @@
+:root {
+    --main-txt-color:  #0a0a0a;
+    --light-color: #EEE8CD;
+    --bg-color: #EC9F05;
+    --bright-color:#FFDD05;
+    --dark-color: red;
+    --main-padding: 1rem;
+ }
+ /* ==== BASE ==== */
+ body {
+    font-family: Impact, Haettenschweiler, ‘Arial Narrow Bold’, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--bg-color);
+    line-height: 1.5;
+    color: var(--dark-color);
+    -webkit-font-smoothing: antialiased;
+ }
+ .container {
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
+    margin: 0 auto;
+ }
+ .menu--settings {
+    list-style-type: none;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+ }
+ figure {
+     margin: 0;
+     padding: 0;
+ }
+ img {
+    max-width: 100%;
+    height: auto;
+    border-style: none;
+ }
+ .sort-list-styles {
+    padding: 0;
+    margin: 0;
+ }
+ .site-header h1 {
+     text-align: center;
+     font-size: 3rem;
+     text-shadow: 4px 4px 0px rgba(150, 150, 150, 1);
+     color: var(--light-color);
+
+ }
+ 
+
+ .menu {
+    background: var(--bright-color);
+    padding-bottom: calc(3* var(--main-padding));
+ }
+ .location {
+    padding-top: calc(3* var(--main-padding));
+    padding-bottom: calc(3* var(--main-padding));
+    text-align: center
+ }
+ footer {
+    padding: calc(3* var(--main-padding)) 0;
+    text-align: center;
+    background: var(--dark-color);
+    color:      var(--main-txt-color);
+ }
+
+figure {
+    width: 150px;
+    height: 150px;
+}
+
+ .menu__title{
+     text-align: center;
+     padding: calc(var(--main-padding) *2) var(--main-padding);
+ }
+ .menu__list{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between
+ }
+ 
+
+@media (min-width: 768px) {
+    .menu__list-item{width: 25%}
+}
+
+@media (min-width: 960px) {
+    .container {max-width: 930px}
+}
+@media (min-width: 1200px) {
+    .container {max-width: 1170px}
+    .moviesfeed article {
+        width: 20%;
+    }
+}
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1410px
+    }
+}
